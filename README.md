@@ -4,7 +4,7 @@ This is an automation to bulk add Access Policies in a FMC, reading from a CSV f
 Before running in a production environment, please test with few items, as you can face a case not covered by this automation.
 If you have any doubt or find any bug, please contact me at bruno.nonogaki@global.ntt
 
-<br><br>
+<br>
 #### Structure
 
 ```bash
@@ -46,8 +46,8 @@ source venv/bin/activate
 ```bash
 $ pip install -r requirements.txt
 ```
-<br>
 
+<br><br>
 #### Configuration
 
 Create a fmc_info.json file with FMC's IP and credential and place it insude /ext/config folder
@@ -99,8 +99,7 @@ Note that:
 - In case the port is a Port Group, make sure you create this port group prior to add the ACPs. The application will not create the port group automatically.
 
 
-<br>
-<br>
+<br><br>
 #### Execution
 
 ```bash
