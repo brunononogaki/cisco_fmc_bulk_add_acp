@@ -1,0 +1,2 @@
+#ACP Policy,Name,Category,Action,Source Zone,Destination Zone,Source Network,Destination Network,Source Ports,Destination Ports
+Third_ACP,Rule Test 2,Teste,Allow,,,10.236.255.0/24;10.236.131.0/24,10.236.4.252;10.236.131.251,443/TCP;2222/TCP;2002/TCP,443/TCP;443/TCP;2002/TCP

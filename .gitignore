@@ -1,0 +1,6 @@
+venv/
+.idea/
+build/
+__pycache__/
+ext/config/fmc_info.json
+.vscode/
