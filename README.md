@@ -46,7 +46,7 @@ source venv/bin/activate
 ```bash
 $ pip install -r requirements.txt
 ```
-
+<br>
 
 #### Configuration
 
@@ -61,7 +61,7 @@ Create a fmc_info.json file with FMC's IP and credential and place it insude /ex
 If you don't create it, the application you ask for these information and will create the file for you.
 
 
-
+<br><br>
 #### Input File
 
 Please create a CSV file called acp.csv and place it in the root directory (same directory as main.py). In this file you must add the following information:
@@ -99,7 +99,8 @@ Note that:
 - In case the port is a Port Group, make sure you create this port group prior to add the ACPs. The application will not create the port group automatically.
 
 
-
+<br>
+<br>
 #### Execution
 
 ```bash
