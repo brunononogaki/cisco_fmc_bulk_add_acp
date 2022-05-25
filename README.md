@@ -30,21 +30,23 @@ If you have any doubt or find any bug, please contact me at bruno.nonogaki@globa
 └── requirements.txt
 ```
 
+
 #### Preparing the environment
 
-Install Python3 (tested on Python 3.10)
+- Install Python3 (tested on Python 3.10)
 
-Create a Virtual Environment
+- Create a Virtual Environment
 ```bash
 python -m venv "venv"
 source venv/bin/activate
 ```
 
-Install the dependencies
+- Install the dependencies
 
 ```bash
 $ pip install -r requirements.txt
 ```
+
 
 #### Configuration
 
@@ -57,6 +59,8 @@ Create a fmc_info.json file with FMC's IP and credential and place it insude /ex
 }
 ```
 If you don't create it, the application you ask for these information and will create the file for you.
+
+
 
 #### Input File
 
@@ -82,13 +86,19 @@ First_ACP,Rule Test 2,Teste,Block,inside_zone,outside_zone,,,,
 ```
 
 Note that:
-- In case of multiple ports, split them with a ;
+- The automation will ignore any line starting with #, such as the header
+- The CSV must be splitted with , and not ;
+- In case of multiple ports, split them with a ; - For example: 443/TCP;5060/TCP
+- In case of multiple hosts or networks, split them with a ; - For example: 192.168.10.0/24;192.168.20.0/24
+- Network address must be in the format X.X.X.X/XX
 - In case of a source or destination network is a FQDN, type the FQDN without the leading . (dot). For example: global.ntt and NOT .global.ntt
 - In case of a source or destination network is a group, type the name of the group. This name can not contain a . (dot).
 - Add the Ports in the following format: <PORTNUMBER>/<PROTOCOL>, example: 5060/TCP
 - In case of a network or port is ANY, leave the field blank in the CSV file
 - In case the category does not exist, the application will create it
 - In case the port is a Port Group, make sure you create this port group prior to add the ACPs. The application will not create the port group automatically.
+
+
 
 #### Execution
 
